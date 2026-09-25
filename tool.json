@@ -1,0 +1,147 @@
+{
+  "tool": {
+    "id": "escala-de-ashworth-modificada",
+    "title": "Escala de Ashworth modificada",
+    "short": "Graduação clínica da espasticidade",
+    "spec": [
+      "medicina-fisica-e-reabilitacao",
+      "neurologia",
+      "ortopedia-e-traumatologia"
+    ],
+    "desc": "Escala de Ashworth modificada (Bohannon e Smith): graduação da espasticidade de 0 a 4, com o grau 1+, pela resistência ao movimento passivo.",
+    "lead": "Gradua a espasticidade pela resistência muscular ao alongamento passivo, músculo a músculo. Referência para indicar e acompanhar toxina botulínica e reabilitação.",
+    "fields": [
+      [
+        "grau",
+        "Resistência ao movimento passivo (em cerca de 1 segundo)",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Sem aumento do tônus muscular",
+            "1": "1 – Aumento leve: “trava e solta” ou resistência mínima no fim do arco de movimento",
+            "2": "2 – Aumento mais marcado na maior parte do arco, mas o segmento move-se com facilidade",
+            "3": "3 – Aumento considerável: movimento passivo difícil",
+            "4": "4 – Segmento rígido em flexão ou extensão",
+            "1p": "1+ – Aumento leve: “trava” seguida de resistência mínima em menos da metade do arco"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Com o paciente relaxado em decúbito dorsal, mova passivamente o segmento em todo o arco de movimento em cerca de 1 segundo e escolha o grau que descreve a resistência. O grau 1+ foi acrescentado por Bohannon e Smith à escala original de Ashworth.</p>",
+    "table": [
+      [
+        "Grau",
+        "Descrição"
+      ],
+      [
+        "0",
+        "Tônus normal"
+      ],
+      [
+        "1",
+        "Resistência mínima no fim do arco"
+      ],
+      [
+        "1+",
+        "Resistência mínima em menos da metade do arco"
+      ],
+      [
+        "2",
+        "Resistência na maior parte do arco; move com facilidade"
+      ],
+      [
+        "3",
+        "Movimento passivo difícil"
+      ],
+      [
+        "4",
+        "Rígido em flexão ou extensão"
+      ]
+    ],
+    "tips": [
+      "Registre o grau <strong>por grupo muscular e lado</strong> (ex.: flexores do cotovelo direito 1+), não um valor global do paciente.",
+      "A escala não distingue espasticidade de contratura: um grau 4 pode ser retração fixa, que não responde à toxina botulínica.",
+      "A concordância entre avaliadores é melhor no membro superior (flexores do cotovelo) que no inferior; padronize posição e velocidade.",
+      "A escala de Tardieu, que compara movimento lento e rápido, separa melhor o componente dependente de velocidade (espasticidade)."
+    ],
+    "sources": [
+      [
+        "Bohannon RW, Smith MB. Interrater reliability of a modified Ashworth scale of muscle spasticity. Phys Ther, 1987.",
+        "https://doi.org/10.1093/ptj/67.2.206"
+      ]
+    ],
+    "cases": [
+      [
+        "Tônus normal: grau 0",
+        {
+          "grau": "0"
+        },
+        {
+          "raw": {
+            "grade": "0"
+          },
+          "level": "low",
+          "main": "0"
+        }
+      ],
+      [
+        "Trava seguida de resistência mínima: grau 1+",
+        {
+          "grau": "1p"
+        },
+        {
+          "raw": {
+            "grade": "1+"
+          },
+          "level": "mid",
+          "main": "1+"
+        }
+      ],
+      [
+        "Movimento passivo difícil: grau 3",
+        {
+          "grau": "3"
+        },
+        {
+          "raw": {
+            "grade": "3"
+          },
+          "level": "high",
+          "verdict": "difícil"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}

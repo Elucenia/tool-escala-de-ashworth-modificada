@@ -1,0 +1,53 @@
+[
+  {
+    "label": "Tônus normal: grau 0",
+    "input": {
+      "grau": "0"
+    },
+    "expected": {
+      "raw": {
+        "grade": "0"
+      },
+      "level": "low",
+      "main": "0"
+    },
+    "originalInput": {
+      "grau": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Trava seguida de resistência mínima: grau 1+",
+    "input": {
+      "grau": "1p"
+    },
+    "expected": {
+      "raw": {
+        "grade": "1+"
+      },
+      "level": "mid",
+      "main": "1+"
+    },
+    "originalInput": {
+      "grau": "1p"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Movimento passivo difícil: grau 3",
+    "input": {
+      "grau": "3"
+    },
+    "expected": {
+      "raw": {
+        "grade": "3"
+      },
+      "level": "high",
+      "verdict": "difícil"
+    },
+    "originalInput": {
+      "grau": "3"
+    },
+    "expandedZeroOptions": []
+  }
+]
