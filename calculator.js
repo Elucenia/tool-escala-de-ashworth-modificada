@@ -1,11 +1,11 @@
-/* tool-escala-de-ashworth-modificada · Elucenia · https://github.com/Elucenia/tool-escala-de-ashworth-modificada
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escala-de-ashworth-modificada · ELUCENIA · https://github.com/Elucenia/tool-escala-de-ashworth-modificada
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-ashworth-modificada","title":"Escala de Ashworth modificada","fields":[["grau","Resistência ao movimento passivo (em cerca de 1 segundo)","sel",{"opts":{"0":"0 – Sem aumento do tônus muscular","1":"1 – Aumento leve: “trava e solta” ou resistência mínima no fim do arco de movimento","2":"2 – Aumento mais marcado na maior parte do arco, mas o segmento move-se com facilidade","3":"3 – Aumento considerável: movimento passivo difícil","4":"4 – Segmento rígido em flexão ou extensão","1p":"1+ – Aumento leve: “trava” seguida de resistência mínima em menos da metade do arco"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
