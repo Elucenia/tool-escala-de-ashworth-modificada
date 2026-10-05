@@ -3,13 +3,14 @@
     "id": "escala-de-ashworth-modificada",
     "title": "Escala de Ashworth modificada",
     "short": "Graduação clínica da espasticidade",
+    "desc": "Escala de Ashworth modificada (Bohannon e Smith): graduação da espasticidade de 0 a 4, com o grau 1+, pela resistência ao movimento passivo.",
+    "lead": "Gradua a espasticidade pela resistência muscular ao alongamento passivo, músculo a músculo. Referência para indicar e acompanhar toxina botulínica e reabilitação.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-fisica-e-reabilitacao",
       "neurologia",
       "ortopedia-e-traumatologia"
     ],
-    "desc": "Escala de Ashworth modificada (Bohannon e Smith): graduação da espasticidade de 0 a 4, com o grau 1+, pela resistência ao movimento passivo.",
-    "lead": "Gradua a espasticidade pela resistência muscular ao alongamento passivo, músculo a músculo. Referência para indicar e acompanhar toxina botulínica e reabilitação.",
     "fields": [
       [
         "grau",
@@ -28,42 +29,6 @@
       ]
     ],
     "formula": "<p>Com o paciente relaxado em decúbito dorsal, mova passivamente o segmento em todo o arco de movimento em cerca de 1 segundo e escolha o grau que descreve a resistência. O grau 1+ foi acrescentado por Bohannon e Smith à escala original de Ashworth.</p>",
-    "table": [
-      [
-        "Grau",
-        "Descrição"
-      ],
-      [
-        "0",
-        "Tônus normal"
-      ],
-      [
-        "1",
-        "Resistência mínima no fim do arco"
-      ],
-      [
-        "1+",
-        "Resistência mínima em menos da metade do arco"
-      ],
-      [
-        "2",
-        "Resistência na maior parte do arco; move com facilidade"
-      ],
-      [
-        "3",
-        "Movimento passivo difícil"
-      ],
-      [
-        "4",
-        "Rígido em flexão ou extensão"
-      ]
-    ],
-    "tips": [
-      "Registre o grau <strong>por grupo muscular e lado</strong> (ex.: flexores do cotovelo direito 1+), não um valor global do paciente.",
-      "A escala não distingue espasticidade de contratura: um grau 4 pode ser retração fixa, que não responde à toxina botulínica.",
-      "A concordância entre avaliadores é melhor no membro superior (flexores do cotovelo) que no inferior; padronize posição e velocidade.",
-      "A escala de Tardieu, que compara movimento lento e rápido, separa melhor o componente dependente de velocidade (espasticidade)."
-    ],
     "sources": [
       [
         "Bohannon RW, Smith MB. Interrater reliability of a modified Ashworth scale of muscle spasticity. Phys Ther, 1987.",
@@ -111,9 +76,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -122,17 +84,415 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:21:47.382Z",
+      "total": 6,
+      "passed": 6,
+      "sourceRowCount": 6,
+      "uniqueApiInputCount": 6,
+      "sourceContextCount": 6,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "0fbc65acd8a03a5e166e150e69fed5611f93051d1ff642fa2eb0f8842088dc5f",
+        "total": 6,
+        "bankRowCount": 6,
+        "uniqueApiInputCount": 6,
+        "sourceContextCount": 6,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+            "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+          },
+          {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+          "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+        },
+        "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          },
+          "item": {
+            "id": "escala-de-ashworth-modificada",
+            "verifiedEdition": "Bohannon/Smith1987 abstract plus author-providedinstructionform",
+            "sourceIds": [
+              "ashworth-instructions-sralab"
+            ],
+            "verified": "Six grades0,1,1+,2,3,4;1+ is separate ordinalgrade, not a measurednumeric1.5. Author-providedform confirms supine patient, appropriate full passiveROM overone second, and relaxation. Originalabstract population30intracraniallesion patients/elbowflexors.",
+            "unresolved": [
+              "Original1987 publisherPDF HTTP403; no fulloriginalarticle/table reading claim.",
+              "No clinical velocity/ROM observation accuracy, muscles/generalizedpopulations or interrater reliability proven by identity test.",
+              "Do not attach arithmeticmeaning/equalinterval spacing to1+."
+            ],
+            "findings": [],
+            "proofScope": "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed",
+            "calculatorImportsPerformed": false,
+            "sourceBinding": {
+              "id": "escala-de-ashworth-modificada",
+              "recordSha256": "d99ffe6416af89f5ff54580e4fc8ccd4f43f6a60a0a22e603c789c9aabe74d97",
+              "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/escala-de-ashworth-modificada.json",
+              "frozenRecordSha256": "3edf958e842a33904c0f61de334124856541f027478e48a9c9f1435833884bef",
+              "methodVersion": "Modified Ashworth/Bohannon Smith 1987:0/1/1+/2/3/4; grau 1+ específico",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3809245/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                  "bytes": 5282,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                  "bytes": 5282,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                  "bytes": 5282,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                }
+              ]
+            }
+          },
+          "sources": [
+            {
+              "id": "ashworth-instructions-sralab",
+              "url": "https://www.sralab.org/sites/default/files/2017-06/Modified%20Ashworth%20Scale%20Instructions.pdf",
+              "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\ashworth-instructions-sralab.pdf",
+              "sha256": "b0ebc8b20bed60b85f0915cbd267d3e97b87c0da725be1ba69d737d9de1eddee",
+              "bytes": 77708,
+              "visualPagesRead": [
+                1
+              ],
+              "readScope": "Author-provided instructions hosted by SRALab/rehabmeasures: attribution to RichardBohannon/MelissaSmith, all six grades and supine/one-second/relax instructions visually read p1. Form/reference text extracted onp2–3, not original1987 manuscript.",
+              "originalFullArticleRead": false
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+      "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+        "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+        "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+        "checks": 27198,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "packagingPeer": "pending"
+      },
+      "freshAdapterExecutions": 18,
+      "freshVmExecutions": 18,
+      "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 6x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+          "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+          "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+          "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+        "Original1987 publisherPDF HTTP403; no fulloriginalarticle/table reading claim.",
+        "No clinical velocity/ROM observation accuracy, muscles/generalizedpopulations or interrater reliability proven by identity test.",
+        "Do not attach arithmeticmeaning/equalinterval spacing to1+.",
+        "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+        "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+        "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+        "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+        "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Modified Ashworth/Bohannon Smith 1987:0/1/1+/2/3/4; grau 1+ específico",
+    "implementationVersion": "escala-de-ashworth-modificada@native-2026-10-03+0819551b5bae",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3809245/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Com o paciente relaxado em decúbito dorsal, mova passivamente o segmento em todo o arco de movimento em cerca de 1 segundo e escolha o grau que descreve a resistência. O grau 1+ foi acrescentado por Bohannon e Smith à escala original de Ashworth.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "grau",
+            "label": "Resistência ao movimento passivo (em cerca de 1 segundo)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem aumento do tônus muscular",
+              "1": "1 – Aumento leve: “trava e solta” ou resistência mínima no fim do arco de movimento",
+              "2": "2 – Aumento mais marcado na maior parte do arco, mas o segmento move-se com facilidade",
+              "3": "3 – Aumento considerável: movimento passivo difícil",
+              "4": "4 – Segmento rígido em flexão ou extensão",
+              "1p": "1+ – Aumento leve: “trava” seguida de resistência mínima em menos da metade do arco"
+            }
+          }
+        ],
+        "hash": "28d7c2f5b6f2d2bc7a27f09b637ecbf8bcd65c8bcbf66749bc1eeedd3c063a86"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Bohannon RW, Smith MB. Interrater reliability of a modified Ashworth scale of muscle spasticity. Phys Ther, 1987.",
+          "url": "https://doi.org/10.1093/ptj/67.2.206",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Interrater reliability of a modified Ashworth scale of muscle spasticity.",
+            "year": "1987",
+            "firstPublicationDate": "1987-02-01",
+            "doi": "10.1093/ptj/67.2.206",
+            "pmid": "3809245",
+            "journal": "Physical therapy",
+            "authors": "Bohannon RW, Smith MB."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3809245/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d4f0a2831ee6eaf5e79b760bd9eefa5734643e5672eb8aa52396fef060edc8af",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:21:47.382Z",
+        "total": 6,
+        "passed": 6,
+        "sourceRowCount": 6,
+        "uniqueApiInputCount": 6,
+        "sourceContextCount": 6,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "0fbc65acd8a03a5e166e150e69fed5611f93051d1ff642fa2eb0f8842088dc5f",
+          "total": 6,
+          "bankRowCount": 6,
+          "uniqueApiInputCount": 6,
+          "sourceContextCount": 6,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+              "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+            },
+            {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+            "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+          },
+          "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            },
+            "item": {
+              "id": "escala-de-ashworth-modificada",
+              "verifiedEdition": "Bohannon/Smith1987 abstract plus author-providedinstructionform",
+              "sourceIds": [
+                "ashworth-instructions-sralab"
+              ],
+              "verified": "Six grades0,1,1+,2,3,4;1+ is separate ordinalgrade, not a measurednumeric1.5. Author-providedform confirms supine patient, appropriate full passiveROM overone second, and relaxation. Originalabstract population30intracraniallesion patients/elbowflexors.",
+              "unresolved": [
+                "Original1987 publisherPDF HTTP403; no fulloriginalarticle/table reading claim.",
+                "No clinical velocity/ROM observation accuracy, muscles/generalizedpopulations or interrater reliability proven by identity test.",
+                "Do not attach arithmeticmeaning/equalinterval spacing to1+."
+              ],
+              "findings": [],
+              "proofScope": "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed",
+              "calculatorImportsPerformed": false,
+              "sourceBinding": {
+                "id": "escala-de-ashworth-modificada",
+                "recordSha256": "d99ffe6416af89f5ff54580e4fc8ccd4f43f6a60a0a22e603c789c9aabe74d97",
+                "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/escala-de-ashworth-modificada.json",
+                "frozenRecordSha256": "3edf958e842a33904c0f61de334124856541f027478e48a9c9f1435833884bef",
+                "methodVersion": "Modified Ashworth/Bohannon Smith 1987:0/1/1+/2/3/4; grau 1+ específico",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3809245/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                    "bytes": 5282,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                    "bytes": 5282,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+                    "bytes": 5282,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  }
+                ]
+              }
+            },
+            "sources": [
+              {
+                "id": "ashworth-instructions-sralab",
+                "url": "https://www.sralab.org/sites/default/files/2017-06/Modified%20Ashworth%20Scale%20Instructions.pdf",
+                "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\ashworth-instructions-sralab.pdf",
+                "sha256": "b0ebc8b20bed60b85f0915cbd267d3e97b87c0da725be1ba69d737d9de1eddee",
+                "bytes": 77708,
+                "visualPagesRead": [
+                  1
+                ],
+                "readScope": "Author-provided instructions hosted by SRALab/rehabmeasures: attribution to RichardBohannon/MelissaSmith, all six grades and supine/one-second/relax instructions visually read p1. Form/reference text extracted onp2–3, not original1987 manuscript.",
+                "originalFullArticleRead": false
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+        "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+          "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+          "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+          "checks": 27198,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed",
+          "packagingPeer": "pending"
+        },
+        "freshAdapterExecutions": 18,
+        "freshVmExecutions": 18,
+        "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 6x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+            "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+            "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+            "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "Five integer grade identities plus source-displayed1+ only, compared as an ordinal string for1+.",
+          "Original1987 publisherPDF HTTP403; no fulloriginalarticle/table reading claim.",
+          "No clinical velocity/ROM observation accuracy, muscles/generalizedpopulations or interrater reliability proven by identity test.",
+          "Do not attach arithmeticmeaning/equalinterval spacing to1+.",
+          "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+          "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+          "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+          "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+          "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828"
+    },
+    "limits": "Graduação clínica da resistência ao movimento passivo, distinta da força muscular. O estudo original de confiabilidade examinou flexores do cotovelo em pacientes com lesão intracraniana. Não se pode transportar automaticamente esse desempenho para toda articulação ou condição neurológica.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.827Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Rubricas 0/1/1+/2/3/4 e velocidade de um segundo não foram conferidas no texto integral."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
+    "bytes": 5282,
+    "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "becec8e45e73103b1853e52db3f880044854455c8401b7f91b89ed2560600672",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "a904d27f15d269aa31fe1007626609fbacc1ed6708ecb1a1bfbcbd398dd11e8a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "a904d27f15d269aa31fe1007626609fbacc1ed6708ecb1a1bfbcbd398dd11e8a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
