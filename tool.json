@@ -243,7 +243,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Modified Ashworth/Bohannon Smith 1987:0/1/1+/2/3/4; grau 1+ específico",
-    "implementationVersion": "escala-de-ashworth-modificada@native-2026-10-03+0819551b5bae",
+    "implementationVersion": "escala-de-ashworth-modificada@native-2026-10-05+77b6114b6e38",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3809245/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -457,7 +457,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828"
+      "implementationHash": "77b6114b6e38177ba3a8be8ac852c33af1fb8285a7020d391c0cc894947d0ab2",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-de-ashworth-modificada@native-2026-10-03+0819551b5bae",
+          "previousImplementationHash": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+          "implementationHash": "77b6114b6e38177ba3a8be8ac852c33af1fb8285a7020d391c0cc894947d0ab2",
+          "scientificBodySha256": "4908dbac9185581daaad9ffcb3fe029175c620c3ee4742409d1b8daec102de03",
+          "metadataContractHash": "28d7c2f5b6f2d2bc7a27f09b637ecbf8bcd65c8bcbf66749bc1eeedd3c063a86",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Graduação clínica da resistência ao movimento passivo, distinta da força muscular. O estudo original de confiabilidade examinou flexores do cotovelo em pacientes com lesão intracraniana. Não se pode transportar automaticamente esse desempenho para toda articulação ou condição neurológica.",
     "sourceLimitEvidence": {
@@ -476,20 +504,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-de-ashworth-modificada/calculator.js",
-    "bytes": 5282,
-    "sha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828"
+    "bytes": 5487,
+    "sha256": "77b6114b6e38177ba3a8be8ac852c33af1fb8285a7020d391c0cc894947d0ab2"
   },
-  "sourceToolSha256": "becec8e45e73103b1853e52db3f880044854455c8401b7f91b89ed2560600672",
+  "sourceToolSha256": "3c523702409367b19b2b1b6d0b8d2659a6effd597d0ac1972df070a5bcc5e885",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "a904d27f15d269aa31fe1007626609fbacc1ed6708ecb1a1bfbcbd398dd11e8a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "a904d27f15d269aa31fe1007626609fbacc1ed6708ecb1a1bfbcbd398dd11e8a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

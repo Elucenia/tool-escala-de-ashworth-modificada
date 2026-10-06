@@ -1,0 +1,387 @@
+{
+  "id": "escala-de-ashworth-modificada",
+  "implementationVersion": "escala-de-ashworth-modificada@native-2026-10-05+77b6114b6e38",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem aumento do tônus",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aumento leve do tônus em menos da metade do arco de movimento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aumento considerável do tônus: movimento passivo difícil",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No increase in tone",
+            "locale": "en",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Slight increase in tone in less than half of the range of motion",
+            "locale": "en",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Considerable increase in tone: passive movement difficult",
+            "locale": "en",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin aumento del tono",
+            "locale": "es",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aumento leve del tono en menos de la mitad del arco de movimiento",
+            "locale": "es",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aumento considerable del tono: movimiento pasivo difícil",
+            "locale": "es",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Pas d’augmentation du tonus",
+            "locale": "fr",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Légère augmentation du tonus sur moins de la moitié de l’amplitude du mouvement",
+            "locale": "fr",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Augmentation importante du tonus : mouvement passif difficile",
+            "locale": "fr",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Keine Tonuszunahme",
+            "locale": "de",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Tonuszunahme in weniger als der Hälfte des Bewegungsumfangs",
+            "locale": "de",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Deutliche Tonuszunahme: passive Bewegung schwierig",
+            "locale": "de",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessun aumento del tono",
+            "locale": "it",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Lieve aumento del tono in meno della metà dell’arco di movimento",
+            "locale": "it",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aumento considerevole del tono: movimento passivo difficile",
+            "locale": "it",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا زيادة في التوتر العضلي",
+            "locale": "ar",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "زيادة طفيفة في التوتر في أقل من نصف مدى الحركة",
+            "locale": "ar",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "زيادة ملحوظة في التوتر: الحركة السلبية صعبة",
+            "locale": "ar",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "肌张力无增加",
+            "locale": "zh",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "在不足一半的活动范围内肌张力轻度增加",
+            "locale": "zh",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "肌张力显著增加：被动活动困难",
+            "locale": "zh",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "筋緊張の増加なし",
+            "locale": "ja",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "可動域の半分未満で筋緊張がわずかに増加",
+            "locale": "ja",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "筋緊張のかなりの増加：他動運動が困難",
+            "locale": "ja",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Tônus normal: grau 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "टोन में कोई वृद्धि नहीं",
+            "locale": "hi",
+            "template": "documented-authored-f19a83fbcb4269af4d64"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Trava seguida de resistência mínima: grau 1+",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गतिविधि-सीमा के आधे से कम में टोन में हल्की वृद्धि",
+            "locale": "hi",
+            "template": "documented-authored-6c80e0fb6ff1a605d2c2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Movimento passivo difícil: grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "टोन में काफ़ी वृद्धि: निष्क्रिय गति कठिन",
+            "locale": "hi",
+            "template": "documented-authored-f36b78debe6c4411225c"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

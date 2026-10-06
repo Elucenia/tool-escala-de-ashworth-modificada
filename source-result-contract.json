@@ -1,0 +1,163 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-de-ashworth-modificada",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ced7c57c5153f9f962f278b5a2e9b94b0cb4943d",
+    "oldEngineSha256": "0819551b5bae727f57f7ae8633462ec712556d4f3538e8db60b95d1c60a6c828",
+    "currentEngineSha256": "77b6114b6e38177ba3a8be8ac852c33af1fb8285a7020d391c0cc894947d0ab2"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Tônus normal: grau 0",
+      "input": {
+        "grau": "0"
+      },
+      "publicOutput": {
+        "id": "escala-de-ashworth-modificada",
+        "main": [
+          "0",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "raw": {
+          "grade": "0"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": "0"
+        },
+        "level": "low",
+        "main": "0"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "level": "low",
+        "verdict": "Sem aumento do tônus",
+        "raw": {
+          "grade": "0"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Trava seguida de resistência mínima: grau 1+",
+      "input": {
+        "grau": "1p"
+      },
+      "publicOutput": {
+        "id": "escala-de-ashworth-modificada",
+        "main": [
+          "1+",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "raw": {
+          "grade": "1+"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": "1+"
+        },
+        "level": "mid",
+        "main": "1+"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1+",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "level": "mid",
+        "verdict": "Aumento leve do tônus em menos da metade do arco de movimento",
+        "raw": {
+          "grade": "1+"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Movimento passivo difícil: grau 3",
+      "input": {
+        "grau": "3"
+      },
+      "publicOutput": {
+        "id": "escala-de-ashworth-modificada",
+        "main": [
+          "3",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "raw": {
+          "grade": "3"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": "3"
+        },
+        "level": "high",
+        "verdict": "difícil"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          ""
+        ],
+        "label": "Grau de espasticidade (Ashworth modificada)",
+        "level": "high",
+        "verdict": "Aumento considerável do tônus: movimento passivo difícil",
+        "raw": {
+          "grade": "3"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}
